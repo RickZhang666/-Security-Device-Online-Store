@@ -1,0 +1,40 @@
+.proheader{
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.alldetails{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.alldetails img{
+    width: 320px;
+    height: 250px;
+}
+.goodsfilter{
+    margin-bottom: 8px;
+    margin-left: 5px;
+    text-align: left;
+    font-size: 18px;
+}
+.content_btn{
+    display: flex;
+    margin-left: 5px;
+
+}
+.content_btn li{
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 1px solid rgba(225,225,225,.4);
+    border-radius: 10px;
+    color: #454242;;
+
+} 
+li:hover{
+    color: #827e7d;
+    background-color: #ced0d4;
+    cursor: pointer;
+}

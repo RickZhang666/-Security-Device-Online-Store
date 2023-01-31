@@ -1,0 +1,102 @@
+
+.product_intro{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.preview_wrap{
+    width: 400px;
+    height: 500px;
+    padding-bottom: 15px;
+    margin-left: 100px;
+}
+.itemInfo_wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    height: 500px;
+    padding-bottom: 15px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+.itemInfo_wrap h1{
+    font-size: 70px;
+    background-color: #e53e41;
+    box-shadow: 3px 3px 3px gray;
+    border-radius: 6px;
+}
+.itemInfo_wrap p{
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.itemInfo_wrap h2{
+    color: #e53e41;
+    font-size: 58px;
+}
+.main_img{
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+}
+.main_img img{
+    width: 100%;
+    height: 500px;
+}
+.spec_list{
+    position: relative;
+    width: 100%;
+    height: 54px;
+    margin-bottom: 18px;
+}
+.prev, .nex{
+    position: absolute;
+    top:50%;
+    margin-top: -16px;
+    cursor: pointer;
+    width: 22px;
+    height: 32px;
+    background: url(../image/arrows.png) no-repeat;
+}
+.prev{
+    left: 0;
+    background-position: 0 -54px;
+}
+.nex{
+    right: 0;
+    background-position: -78px 0;
+}
+.spec_items{
+    position: relative;
+    width: 87%;
+    height: 54px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.spec_items ul{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 406px;
+    height: 54px;
+    transition: all 0.5s;
+}
+.spec_items ul li{
+    width: 54px;
+    height: 54px;
+    margin: 0 2px;
+    float: left;
+}
+.spec_items ul li img{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(225,225,225,.7);
+}
+.spec_items ul .img_hover img{
+    border: 2px solid #e53e41;
+}

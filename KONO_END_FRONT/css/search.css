@@ -1,0 +1,96 @@
+.clearfix{
+    zoom:1;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    margin: 0 auto;
+    width: 1200px;
+    height: auto;
+    background-color: #fff;
+}
+
+.box .cont{
+    margin-top: 30px;
+    display:inline;
+    float: left;
+    width:100%;
+}
+
+.box .cont li{
+    display: inline;
+    float: left;
+    margin: 10px 12px;
+    width: 362px;
+    height: 360px;
+}
+
+.box .cont li:nth-child(4n){
+    margin-right: 54px;
+    float: right;
+}
+
+.box .cont li a{
+    position: relative;
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+
+.box .cont li a .img{
+    width: 361px;
+    height: 311px;
+    border: 1px #bbb solid;
+}
+
+.box .cont li a .img img{
+    margin: 4px;
+    width: 340px;
+    height: 300px;
+    
+}
+
+.box .cont li a .img img:hover{
+    transform: scale(1.06);
+    transition: 1s;
+}
+
+.box .cont li a p{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    height: 50px;
+    text-align: 27px;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(-45deg,rgb(92, 91, 91),rgb(160, 160, 160));
+}
+
+.box .cont li a span{
+    margin: 8px;
+    font-weight: 500;
+}
+
+.box .cont li a i{
+    border-left: 2px solid #fff;
+    height: 26px;
+    display: inline;
+    overflow: hidden;
+}
+
+.box .cont li .list{
+    width: 360px;
+}
+
+.box .cont li .list{
+    padding-top: 10px;
+    padding-bottom: 6px;
+    font-size: 15px;
+    font-weight: bold;
+}

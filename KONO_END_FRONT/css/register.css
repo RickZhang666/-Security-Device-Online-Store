@@ -1,0 +1,202 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #616161 url(../image/page/registerback.jpg)center/cover no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+}
+
+
+.logWindow{
+    height: 500px;
+    width: 700px;
+    margin: auto;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: .4s,box-shadow .3s .4s;
+
+}
+
+.logWindow input{
+    background: rgba(255, 255, 255, 0.15);
+    width: 100%;
+    padding: 8px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-size: 20ox;
+}
+
+.logWindow label{
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+.logWindow button{
+    background: linear-gradient(-45deg, #12174d,#ca4cf0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 21px;
+    outline: none;
+    overflow: hidden;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transform: translateX(-50%);
+}
+
+.logWindow button:before{
+    content:  '';
+    background: rgba(255, 255, 255, 0.3);
+    height: 100%;
+    width: 65px;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transform: skew(-45deg);
+    transition: 0s;
+}
+
+.logWindow button:hover:before{
+    left: 120%;
+    transition: 0.3s;
+}
+
+.logWindow .form, .invite{
+    background: rgba(71, 71, 71, 0.8);
+    width: 50%;
+    height: 100%;
+    padding: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logWindow .invite{
+    background: linear-gradient(-45deg, #12174d,#ca4cf0);
+    left: 50%;
+}
+
+.logWindow .nope, .nope1{
+    background: #474747;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-origin: 0 2px 5px rgba(0,0,0,0.25);
+    bottom: 30px;
+    left: 20%;
+    font-size: 14px;
+    white-space: nowrap;
+    cursor: pointer;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.logWindow .nope1 a{
+    color: #fff;
+}
+
+.logWindow .nope a{
+    color: #fff;
+}
+
+.logWindow .nope:hover, .nope1:hover{
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.25);
+    transform: translateX(-50%);
+}
+
+.close{
+    background: #474747;
+    height: 30px;
+    width: 30px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -2%;
+    right: -2%;
+    cursor: pointer;
+    transition: .4s .3s;
+}
+
+.close:before, .close:after{
+    content: '';
+    background: #fff;
+    height: 80%;
+    width: 3px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.close:after{    
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.open{
+    background: linear-gradient(-45deg, #12174d,#ca4cf0);
+    border: 1px #fff;
+    border-radius: 5px;
+    height: 45px;
+    width: 150px;
+    padding: 10px 20px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.open.active{
+    transition: 0.5s;
+    /* transparency */
+    opacity: 1;
+    /* visible */
+    visibility: visible;
+}
+
+.open:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.logWindow.hidden{
+    box-shadow: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.logWindow.hidden .form{
+    transition: 1s;
+    left:-100%;
+}
+
+.logWindow.hidden .invite{
+    transition: 1s;
+    left:100%;
+}
+
+.logWindow.hidden .invite .close{
+    top: -2%;
+    /* bottom: 0; */
+    /* left: 0; */
+    right: -2%;
+}
+.warning{
+    color: #ca4cf0;
+}
